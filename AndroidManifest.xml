@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smartmadsoft.xposed.samsungautobrightnessfix"
+    android:versionCode="1"
+    android:versionName="0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15"
+        android:maxSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="Fix Samsung auto brighntess behaviour - when device is held in hand, it doesn't auto-lower brightness when outside light goes suddenly to 0 lux." />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="50" />
+    </application>
+
+</manifest>
